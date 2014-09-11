@@ -40,7 +40,7 @@ angular.module('fauxNews',['ui.router']) // Going with UI router to get more fam
     };
 
   .controller('PostsCtrl',['$scope','$stateParams','posts',function($scope, $stateParams, posts){
-
+    
   }]);
 
   .factory('posts', [function(){
