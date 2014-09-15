@@ -11,6 +11,7 @@ var express = require('express'),
 var routes = require('./routes/index'),
     users = require('./routes/users');
 
+//There's a mongoose error with Posts model. It needs to be fixed because I can't run node.
 mongoose.connect('mongodb://localhost/news');
 require('./models/Posts');
 require('./models/Comments');
