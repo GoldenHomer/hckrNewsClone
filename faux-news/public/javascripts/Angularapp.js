@@ -56,7 +56,7 @@ angular.module('fauxNews',['ui.router']) // Going with UI router to get more fam
     };
   }]);
 
-  .controller('PostsCtrl',['$scope','$stateParams','posts', function($scope, posts, post){
+  .controller('PostsCtrl',['$scope','$stateParams','posts', 'post', function($scope, posts, post){
     $scope.post = post;
 
     $scope.incrementUpvotes = function(comment){
